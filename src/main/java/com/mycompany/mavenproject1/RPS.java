@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author CL2-PC
+ * @author NOT cl2-09 
  */
-public class Mavenproject2 {
+public class RPS {
             
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -20,10 +20,19 @@ public class Mavenproject2 {
         System.out.println( "Player 2's Move: ");
         int y = input.nextInt();
         
-        if(x == 1 && y == 2 || x == 2 && y == 3)
+        
+        
+        if(x == 1 && y == 2 || x == 2 && y == 3 || x == 3 && y == 1) // player 2 wins
         {
             System.out.println("Player 2 Wins!");
         }
-
+        else if (x == 2 && y == 1 || x == 3 && y == 2 || x == 1 && y == 3) // player 1 wubs
+        {
+            System.out.println("Player 1 Wins!");
+        }
+        else if (x == 1 && y == 1 || x == 2 && y == 2 || x == 3 && y == 3) // draw
+        {
+            System.out.println("Draw!");
+        }
     }
 }
