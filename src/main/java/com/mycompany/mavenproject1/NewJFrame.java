@@ -62,13 +62,15 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jButton9 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
         jButton11 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jPanel5 = new javax.swing.JPanel();
+        jButton24 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -209,12 +211,11 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 70, 50));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 330, 340));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 330, 340));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
         jLabel1.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 120, 120));
@@ -227,7 +228,6 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 120, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel2.setText("jLabel1");
         jLabel2.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 120, 120));
@@ -240,7 +240,6 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, 120, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel3.setText("jLabel1");
         jLabel3.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, 120, 120));
@@ -261,7 +260,6 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 120, 30));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel4.setText("jLabel1");
         jLabel4.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 120, 120));
@@ -274,12 +272,10 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 120, 30));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel5.setText("jLabel1");
         jLabel5.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 120, 120));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel6.setText("jLabel1");
         jLabel6.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, 120, 120));
@@ -300,7 +296,6 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 530, 120, 30));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel7.setText("jLabel1");
         jLabel7.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 120, 120));
@@ -313,12 +308,10 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, 120, 30));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel8.setText("jLabel1");
         jLabel8.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 120, 120));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL2-PC\\Downloads\\f6ec44fc-2e7a-4659-992a-386d4b6a93d0.jpg")); // NOI18N
         jLabel9.setText("jLabel1");
         jLabel9.setPreferredSize(new java.awt.Dimension(300, 300));
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, 120, 120));
@@ -331,28 +324,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 530, 120, 30));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 530, 600));
-
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "🛒 ID ", "Item", "Qty", "Price"
-            }
-        ));
-        jTable1.setEnabled(false);
-        jScrollPane1.setViewportView(jTable1);
-
-        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 210));
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 210));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 530, 650));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -365,17 +337,51 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         jPanel4.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel12.setText("Total: $0.00");
-        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 50));
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/mavenproject1/Untitled design.png"))); // NOI18N
+        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 60, 50));
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel14.setText("Total: $0.00 ");
-        jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 50));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 80));
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 330, 50));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "ID", "Item", "Qty", "Price"
+            }
+        ));
+        jTable1.setEnabled(false);
+        jScrollPane1.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 330, 260));
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton24.setText("Total");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel15.setText("Total: $0.00");
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 50));
+
+        jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel17.setText("Total: $0.00 ");
+        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, 240, 50));
+
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 330, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -483,6 +489,10 @@ public class NewJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton25ActionPerformed
 
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton24ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -537,6 +547,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -546,9 +557,10 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -559,8 +571,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
