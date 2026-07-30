@@ -77,7 +77,7 @@ public class TestRun extends javax.swing.JFrame {
         String userpassword = String.valueOf(pass);
         
         try{
-        String sqlquery = "Select * From Table1 WHERE username = ? and password = ? ";
+        String sqlquery = "Select * From Table1 WHERE User_name = ? and User_password = ? ";
         pst = conn.prepareStatement(sqlquery);
         pst.setString(1,username);
         pst.setString(2, userpassword);
