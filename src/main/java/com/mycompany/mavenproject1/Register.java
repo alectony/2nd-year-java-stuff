@@ -8,22 +8,20 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author CL2-PC
  */
-public class TestRun extends javax.swing.JFrame {
+public class Register extends javax.swing.JFrame {
     Connection conn;
     PreparedStatement pst;
     ResultSet rs;
 
     /**
-     * Creates new form TestRun
+     * Creates new form Register
      */
-    public TestRun() {
+    public Register() {
         initComponents();
-        
         conn = MsConnectAccess.conn();
     }
 
@@ -47,8 +45,8 @@ public class TestRun extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("LOGIN");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 80, 30));
+        jLabel1.setText("REGISTER");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 100, 30));
         getContentPane().add(txt_username, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 170, -1));
 
         jButton1.setText("login");
@@ -77,34 +75,27 @@ public class TestRun extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String username = txt_username.getText();
-        char[] pass = txt_password.getPassword();
-        String userpassword = String.valueOf(pass);
-        
-        try{
-        String sqlquery = "Select * From Table1 WHERE User_name = ? and User_password = ? ";
-        pst = conn.prepareStatement(sqlquery);
-        pst.setString(1,username);
-        pst.setString(2, userpassword);
-            rs = pst.executeQuery();
-            
-            if(!rs.next())
-            {
-            JOptionPane.showMessageDialog(null,"incorrect input either username or password");
-            
-            }
-            else
-            {
-            JOptionPane.showMessageDialog(null,"login successfull");
-            }
-        }catch(SQLException e){
-            
-            JOptionPane.showMessageDialog(null, e);
-        }
         
         
-                   
+        String username = txt_username.getText().trim();
+        String userpassword = new String(txt_password.getPassword());
 
+        String sqlquery = "INSERT INTO Table1 (User_name, User_password) VALUES (?, ?)";
+
+        try (PreparedStatement pst = conn.prepareStatement(sqlquery)) {
+            pst.setString(1, username);
+            pst.setString(2, userpassword);
+
+            int rowsInserted = pst.executeUpdate();
+
+            if (rowsInserted > 0) {
+                JOptionPane.showMessageDialog(null, "User created successfully!");
+            } else {
+                JOptionPane.showMessageDialog(null, "Failed to create user.");
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Database Error: " + e.getMessage());
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txt_passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_passwordActionPerformed
@@ -128,20 +119,20 @@ public class TestRun extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TestRun.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TestRun.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TestRun.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TestRun.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TestRun().setVisible(true);
+                new Register().setVisible(true);
             }
         });
     }
